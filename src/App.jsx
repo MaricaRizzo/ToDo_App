@@ -1,15 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import TaskInput from "./components/TaskInput";
+import TaskList from "./components/TaskList";
+import TaskStats from "./components/TaskStats";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div>
         <p>Hello World!</p>
+        <TaskStats />
+        <TaskInput />
+        <TaskList />
       </div>
     </>
   );
