@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="container-fluid text-center">
       <div>
-        <p>Hello World!</p>
+        <h1>To-Dos</h1>
         <TaskStats myList={myList} />
-        <TaskInput setMyList={setMyList} />
+        <TaskInput myList={myList} setMyList={setMyList} />
         <TaskList myList={myList} />
       </div>
     </div>

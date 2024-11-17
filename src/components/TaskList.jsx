@@ -6,9 +6,9 @@ function TaskList(props) {
       <div>
         <p>TaskList</p>
 
-        {props.myList.forEach((i) => {
-          <TaskItem toDoItem={i} />;
-        })}
+        {props.myList.map((i, index) => (
+          <TaskItem key={index} toDoItem={i} />
+        ))}
       </div>
     </>
   );
