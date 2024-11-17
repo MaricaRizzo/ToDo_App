@@ -16,7 +16,7 @@ function App() {
         <div className="card-body">
           <TaskStats myList={myList} />
           <TaskInput myList={myList} setMyList={setMyList} />
-          <TaskList myList={myList} />
+          <TaskList myList={myList} setMyList={setMyList} />
         </div>
       </div>
     </div>
