@@ -5,16 +5,19 @@ import TaskList from "./components/TaskList";
 import TaskStats from "./components/TaskStats";
 
 function App() {
-  const testArray = ["Buy milk", "Finish project"];
-  const [myList, setMyList] = useState(testArray);
+  const [myList, setMyList] = useState([]);
 
   return (
     <div className="container-fluid text-center">
-      <div>
-        <h1>To-Dos</h1>
-        <TaskStats myList={myList} />
-        <TaskInput myList={myList} setMyList={setMyList} />
-        <TaskList myList={myList} />
+      <div className="card mt-5 mx-auto w-50">
+        <div className="card-header">
+          <h1>To-Dos</h1>
+        </div>
+        <div className="card-body">
+          <TaskStats myList={myList} />
+          <TaskInput myList={myList} setMyList={setMyList} />
+          <TaskList myList={myList} />
+        </div>
       </div>
     </div>
   );

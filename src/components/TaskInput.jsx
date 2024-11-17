@@ -24,15 +24,18 @@ function TaskInput(props) {
   return (
     <>
       <form onSubmit={handleAddTask}>
-        <label>New task</label>
+        <label className="me-2">New task</label>
         <input
           ref={inputRef}
           type="text"
           value={inputValue}
           onChange={handleInputChange}
           placeholder="Enter a task"
+          className="me-2"
         />
-        <input type="submit" value="Add" />
+        <button type="submit" className="btn btn-primary">
+          <i className="fas fa-plus"></i> Add
+        </button>
       </form>
     </>
   );
