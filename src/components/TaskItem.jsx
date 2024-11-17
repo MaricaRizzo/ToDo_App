@@ -1,8 +1,8 @@
-function TaskItem() {
+function TaskItem(props) {
   return (
     <>
       <div>
-        <p>TaskItem</p>
+        <p>{props.toDoItem}</p>
       </div>
     </>
   );

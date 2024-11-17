@@ -1,11 +1,14 @@
 import TaskItem from "./TaskItem";
 
-function TaskList() {
+function TaskList(props) {
   return (
     <>
       <div>
         <p>TaskList</p>
-        <TaskItem />
+
+        {props.myList.forEach((i) => {
+          <TaskItem toDoItem={i} />;
+        })}
       </div>
     </>
   );

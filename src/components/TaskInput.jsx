@@ -1,4 +1,4 @@
-function TaskInput() {
+function TaskInput(props) {
   return (
     <>
       <div>

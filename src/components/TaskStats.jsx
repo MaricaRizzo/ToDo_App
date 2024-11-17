@@ -1,8 +1,8 @@
-function TaskStats() {
+function TaskStats(props) {
   return (
     <>
       <div>
-        <p>TaskStats</p>
+        <p>TaskStats: {props.myList.length}</p>
       </div>
     </>
   );
